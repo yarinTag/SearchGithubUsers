@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+Starter Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+css provided (global styles, styled components)
+folders/files already setup
+all imports included (warnings)
+index.js for easier imports
+Styled Components
+Styled-Components - Main Docs
 
-## Available Scripts
+import styled from "styled-components";
 
-In the project directory, you can run:
+const ReactComponent = () => {
+ // logic here
+ return <Wrapper>
+ {some content}
+ </Wrapper>
+}
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+const Wrapper = styled.htmlElement`
+write your styles here
+`
+export default ReactComponent
+React Icons
+React Icons - Main Docs
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+import { FiUsers, FiUserPlus } from 'react-icons/fi';
+<FiUsers className='nameOfTheClass'> </FiUsers>;
+React Router Dom
+version used - "react-router-dom": "^5.2.0",
 
-### `npm test`
+react-router-dom - Main Docs
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+renders the first child that matches
 
-### `npm run build`
+A always matches
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Gihthub API
+Root Endpoint
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Get User
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Repos
 
-### `npm run eject`
+Followers
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Rate Limit
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+For unauthenticated requests, the rate limit allows for up to 60 requests per hour. Unauthenticated requests are associated with the originating IP address, and not the user making requests.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Fusion Charts
+Fusion Charts - Main Docs
+First React Chart
+List Of Charts
+Themes
+Auth0
+Auth0 - Main Docs
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Create Application
 
-## Learn More
+Choose : Single Page Web Applications
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Choose : React
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Go to Settings Tab
 
-### Code Splitting
+Copy/Paste Domain, ClientID - can be public (or use .env)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Add Domain - for now http://localhost:3000 (DON'T COPY PASTE FROM URL BAR)
 
-### Analyzing the Bundle Size
+Allowed Callback URLs
+Allowed Logout URLs
+Allowed Web Origins
+SAVE CHANGES!!!!!!!!!!!!!!!
+Connections email,social
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+React SDK Docs
 
-### Making a Progressive Web App
+REACT SDK API Docs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Deployment
+Netlify
 
-### Advanced Configuration
+Additional Info
+Redirects with react-router-dom
+In order for routing to work on netlify, redirects was added to the public folder
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+_redirects file in public
 
-### Deployment
+/*    /index.html   200
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Redirects Blog Post
 
-### `npm run build` fails to minify
+Warnings and create-react-app
+package.json
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+"build": "CI= react-scripts build",
