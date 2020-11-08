@@ -1,4 +1,5 @@
 export default {
+ 
     login: "yarinTag",
     id: 65770513,
     node_id: "MDQ6VXNlcjY1NzcwNTEz",
@@ -27,8 +28,9 @@ export default {
     twitter_username: null,
     public_repos: 3,
     public_gists: 0,
-    followers: 0,
+    followers: 1,
     following: 0,
     created_at: "2020-05-22T12:48:25Z",
     updated_at: "2020-11-01T11:13:55Z"
+
 };
