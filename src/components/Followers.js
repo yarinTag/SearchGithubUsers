@@ -18,7 +18,7 @@ const Followers = () => {
             </div>
           </article>
         })}
-      </div>
+      </div> 
     </Wrapper>
   );
 };
