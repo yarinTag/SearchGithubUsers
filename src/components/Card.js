@@ -2,8 +2,31 @@ import React from 'react';
 import { GithubContext } from '../context/context';
 import styled from 'styled-components';
 import { MdBusiness, MdLocationOn, MdLink } from 'react-icons/md';
+
 const Card = () => {
-  return <h2>card component</h2>;
+  const {GithubUser}=React.useContext(GithubContext);
+  const {avatar_url,html_url,name,company,blog,bio,location,twitter_username}=GithubUser;
+  return (
+    <Wrapper>
+      <header>
+        <img src={avatar_url} alt={name}/>
+        <div>
+          <h4>{name}</h4>
+          <p>@{twitter_username || 'Yarin Tag'}</p>
+        </div>
+        <a href={html_url}>Follow</a>
+      </header>
+      <p className='bio'>{bio || 'Working to prove my bio'}</p>
+      <div className="links">
+        <p><MdBusiness/>{company || 'Student'}</p>
+        <p><MdLocationOn/>{location || 'earth'}</p>
+        <a href={`https://${blog}`}>
+          <MdLink/>
+          {blog || 'notYet'}
+        </a>
+      </div>
+    </Wrapper>
+  );
 };
 const Wrapper = styled.article`
   background: var(--clr-white);
@@ -45,8 +68,8 @@ const Wrapper = styled.article`
       margin-bottom: 0;
     }
     a {
-      color: var(--clr-primary-5);
-      border: 1px solid var(--clr-primary-5);
+      color: #2E8B57;
+      border: 1px solid #C0C0C0;
       padding: 0.25rem 0.75rem;
       border-radius: 1rem;
       text-transform: capitalize;
@@ -54,8 +77,8 @@ const Wrapper = styled.article`
       transition: var(--transition);
       cursor: pointer;
       &:hover {
-        background: var(--clr-primary-5);
-        color: var(--clr-white);
+        background: #9ACD32;
+        color: #008080;
       }
     }
   }
@@ -70,7 +93,7 @@ const Wrapper = styled.article`
       align-items: center;
       svg {
         margin-right: 0.5rem;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
       }
     }
     a {

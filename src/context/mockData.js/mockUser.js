@@ -1,6 +1,6 @@
 export default {
  
-    login: "yarinTag",
+   login: "yarinTag",
     id: 65770513,
     node_id: "MDQ6VXNlcjY1NzcwNTEz",
     avatar_url: "https://avatars0.githubusercontent.com/u/65770513?v=4",
@@ -18,10 +18,10 @@ export default {
     received_events_url: "https://api.github.com/users/yarinTag/received_events",
     type: "User",
     site_admin: false,
-    name: null,
+    name: "Yarin Tag",
     company: null,
     blog: "",
-    location: null,
+    location: "Israel",
     email: null,
     hireable: null,
     bio: null,
@@ -31,6 +31,6 @@ export default {
     followers: 1,
     following: 0,
     created_at: "2020-05-22T12:48:25Z",
-    updated_at: "2020-11-01T11:13:55Z"
+    updated_at: "2020-11-08T21:15:46Z"
 
 };
