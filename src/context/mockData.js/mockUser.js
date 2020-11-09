@@ -1,6 +1,6 @@
 export default {
- 
-   login: "yarinTag",
+
+    login: "yarinTag",
     id: 65770513,
     node_id: "MDQ6VXNlcjY1NzcwNTEz",
     avatar_url: "https://avatars0.githubusercontent.com/u/65770513?v=4",
@@ -28,9 +28,8 @@ export default {
     twitter_username: null,
     public_repos: 3,
     public_gists: 0,
-    followers: 1,
-    following: 0,
+    followers: 3,
+    following: 11,
     created_at: "2020-05-22T12:48:25Z",
     updated_at: "2020-11-08T21:15:46Z"
-
 };
