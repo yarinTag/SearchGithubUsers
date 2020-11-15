@@ -46,6 +46,7 @@ const Search = () => {
 
 const Wrapper = styled.div`
   position: relative;
+  margin-left: 0px;
   display: grid;
   gap: 1rem 1.75rem;
   @media (min-width: 768px) {
@@ -56,7 +57,7 @@ const Wrapper = styled.div`
     }
   }
   .form-control {
-    background: #F5F5DC;
+    background: #FFFFFF;
     display: grid;
     align-items: center;
     grid-template-columns: auto 1fr auto;
@@ -65,7 +66,7 @@ const Wrapper = styled.div`
     padding: 0.5rem;
     input {
       border-color: transparent;
-      outline-color: var(--clr-grey-10);
+      outline-color: #F8F8FF;
       letter-spacing: var(--spacing);
       color: var(--clr-grey-3);
       padding: 0.25rem 0.5rem;
@@ -76,7 +77,7 @@ const Wrapper = styled.div`
       letter-spacing: var(--spacing);
     }
     button {
-      border-radius: 5px;
+      border-radius: 15px;
       border-color: transparent;
       padding: 0.25rem 0.5rem;
       text-transform: capitalize;
@@ -87,17 +88,17 @@ const Wrapper = styled.div`
       cursor: pointer;
       &:hover {
         background: var(--clr-primary-8);
-        color: var(--clr-primary-1);
+        color: #F4A460;
       }
     }
 
     svg {
-      color: var(--clr-grey-5);
+      color: #F4A460;
     }
     input,
     button,
     svg {
-      font-size: 1.3rem;
+      font-size: 1.7rem;
     }
     @media (max-width: 800px) {
       button,
@@ -108,9 +109,10 @@ const Wrapper = styled.div`
     }
   }
   h3 {
-    margin-bottom: 0;
+    margin-bottom: 5;
     color: var(--clr-grey-5);
-    font-weight: 400;
+    font-weight: 400px;
+    margin-right: 0px;
   }
 `;
 const ErrorWrapper = styled.article`

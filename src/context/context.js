@@ -42,6 +42,8 @@ const GithubProvider=({children})=>{
             // axios(`${followers_url}?per_page=100`).then(response=>
             //     setFollowers(response.data)
             // );
+            
+            //once the promises have been settled, then of course we decide to do something with them.
             await Promise.allSettled([
                 axios(`${rootUrl}/users/${login}/repos?per_page=100`),
                 axios(`${followers_url}?per_page=100`),]).then((results)=>{
