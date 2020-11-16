@@ -4,6 +4,7 @@ import loadingImage from '../images/preloader.gif';
 import { GithubContext } from '../context/context';
 import './Dashboard.css';
 
+
 const Dashboard = () => {
   const{isLoading}=React.useContext(GithubContext);
   if(isLoading){
@@ -14,7 +15,7 @@ const Dashboard = () => {
     </main>
   }
   return (
-    <main className="color-background">
+    <main className="color-background" >
       <Navbar></Navbar> 
       <Search/>
       <Info/>

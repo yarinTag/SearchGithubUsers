@@ -68,7 +68,7 @@ const Wrapper = styled.article`
       margin-bottom: 0;
     }
     a {
-      color: #2E8B57;
+      color: #0b4040;
       border: 1px solid #C0C0C0;
       padding: 0.25rem 0.75rem;
       border-radius: 1rem;
@@ -77,8 +77,8 @@ const Wrapper = styled.article`
       transition: var(--transition);
       cursor: pointer;
       &:hover {
-        background: #9ACD32;
-        color: #008080;
+        background: #d45e67;
+        color: #9eb179;
       }
     }
   }
@@ -88,7 +88,7 @@ const Wrapper = styled.article`
   .links {
     p,
     a {
-      margin-bottom: 0.25rem;
+      margin-bottom: 1.25rem;
       display: flex;
       align-items: center;
       svg {

@@ -66,8 +66,8 @@ const Repos = () => {
 const Wrapper = styled.div`
   display: grid;
   justify-items: center;
-  gap: 2rem;
-  @media (min-width: 800px) {
+  gap: 0.1rem;
+  @media (min-width: 880px) {
     grid-template-columns: 1fr 1fr;
   }
 

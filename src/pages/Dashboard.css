@@ -1,4 +1,7 @@
 .color-background {
    background: rgb(142,84,122);
    background: linear-gradient(37deg, rgba(142,84,122,0.9542191876750701) 14%, rgba(145,95,94,0.24722222222222223) 79%);
+   /* background:  url(https://media1.tenor.com/images/dedfa4e18ea636c6795daadb3ce13dc1/tenor.gif?itemid=16356157) ; 
+   background-size: 100%;
+    */
 }

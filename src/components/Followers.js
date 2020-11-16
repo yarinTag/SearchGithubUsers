@@ -33,7 +33,7 @@ const Wrapper = styled.article`
   &::before {
     content: ' followers';
     position: absolute;
-    top: 0;
+    top: -10px;
     left: 0;
     transform: translateY(-100%);
     background: var(--clr-white);
@@ -43,7 +43,7 @@ const Wrapper = styled.article`
     text-transform: capitalize;
     padding: 0.5rem 1rem 0 1rem;
     letter-spacing: var(--spacing);
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .followers {
     overflow: scroll;
@@ -51,7 +51,7 @@ const Wrapper = styled.article`
     display: grid;
     grid-template-rows: repeat(auto-fill, minmax(45px, 1fr));
     gap: 1.25rem 1rem;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
   }
   article {
     transition: var(--transition);

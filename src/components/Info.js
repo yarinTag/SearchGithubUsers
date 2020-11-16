@@ -72,15 +72,15 @@ const Wrapper = styled.section`
   }
   .item {
     border-radius: var(--radius);
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     background: var(--clr-white);
     display: grid;
     grid-template-columns: auto 1fr;
     column-gap: 3rem;
     align-items: center;
     span {
-      width: 3rem;
-      height: 3rem;
+      width: 4rem;
+      height: 4rem;
       display: grid;
       place-items: center;
       border-radius: 50%;
@@ -89,7 +89,7 @@ const Wrapper = styled.section`
       font-size: 1.5rem;
     }
     h3 {
-      margin-bottom: 0;
+      margin-bottom: 5;
       letter-spacing: 0;
     }
     p {
