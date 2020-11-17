@@ -26,17 +26,51 @@ const Wrapper = styled.section`
     height: 75vh;
   }
   img {
-    margin-bottom: 1rem;
-    
+    width: 115vh;
+    display: block;
   }
   h1 {
     margin-bottom: 1rem;
-    margin-left: 15rem;
+    font-size: 3rem;
   }
   .btn {
-    margin-left: 15rem;
-  
-
+    text-align:center;
+    text-transform: uppercase;
+    background: #00d1e4;
+    color: #e0fcff;    
+    padding-top: 0.375rem;
+    padding-right: 0.75rem;
+    padding-bottom: 0.375rem;
+    padding-left: 0.75rem;
+    letter-spacing: 0.32rem;
+    display: inline-block;
+    font-weight: 400;
+    transition: var(--transition);
+    font-size: 1.3rem;
+    border: 2px solid transparent;
+    border-top-color: transparent;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-right-color: transparent;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-left-color: transparent;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    cursor: pointer;
+    box-shadow:  -11px 9px 5px 2px rgba(0,0,0,.2);
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
   }
 `;
 export default Login;
