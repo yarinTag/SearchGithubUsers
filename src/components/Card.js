@@ -11,18 +11,18 @@ const Card = () => {
       <header>
         <img src={avatar_url} alt={name}/>
         <div>
-          <h4>{name}</h4>
-          <p>@{twitter_username || 'Yarin Tag'}</p>
+          <h3>{name}</h3>
+          <p>@{twitter_username || ''}</p>
         </div>
         <a href={html_url}>Follow</a>
       </header>
-      <p className='bio'>{bio || 'Working to prove my bio'}</p>
+      <p className='bio'>{bio || '. . .'}</p>
       <div className="links">
-        <p><MdBusiness/>{company || 'Student'}</p>
+        <p><MdBusiness/>{company || 'none employe'}</p>
         <p><MdLocationOn/>{location || 'earth'}</p>
         <a href={`https://${blog}`}>
           <MdLink/>
-          {blog || 'notYet'}
+          {blog || ''}
         </a>
       </div>
     </Wrapper>
